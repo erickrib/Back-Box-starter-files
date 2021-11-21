@@ -102,17 +102,36 @@ img {
 .nav__list {
 	display: flex;
 	flex-wrap: wrap;
+	margin-left: 10px;
+}
+@media (max-width:412px){
+	
+	.menu {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		max-width: 960px;
+		margin: 0 auto;
+		flex-wrap: wrap;
+		padding: 10px 0 11px 0;
+	}
+	.nav__list {
+		display: flex;
+		flex-wrap: wrap;
+		height: 40px;
+	}
 }
 
 .nav__link {
-	padding: 20px 10px;
+	margin-right: 10px;
+	margin-top: 10px;
 }
 
 .nav__link:hover{
-	background-color: var(--clr-blue-dark);
+	background-color:#8983fa;
 	color:var(--clr--yellow-dark);
 	border-radius: 5px;
-	padding: 3px 10px;
+	padding: 2px 7px;
 	transition-duration: .5s;
 }
 /**********************************/
@@ -300,7 +319,7 @@ img {
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content:space-around ;
 }
 
 .vantagem {
@@ -340,7 +359,16 @@ img {
 		max-width: 220px;
 	}
 }
-
+@media (max-width: 482px){
+	.vantagens {
+		max-width: 960px;
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		
+	}
+}
 /**********************************/
 /* 8. Newsletter
 /**********************************/
@@ -421,6 +449,7 @@ img {
 
 .footer__copyright,
 .footer__logo {
+	margin-top: 20px;
 	margin-bottom: 5px;
 	padding-left: 10px;
 	padding-right: 10px;
